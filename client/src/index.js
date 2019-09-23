@@ -9,7 +9,7 @@ import reduxThunk from 'redux-thunk'
 
 
 
-const store = createStore(()=>[], {}, applyMiddleware(reduxThunk));
+const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
 
 ReactDOM.render(
